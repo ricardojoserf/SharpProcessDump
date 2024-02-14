@@ -1,6 +1,6 @@
 # SharpProcessDump
 
-Dump memory regions of a process which are readable (*PAGE_READWRITE* protection) and are commited (*MEM_COMMIT* state).
+Dump memory regions of a process which are readable (*PAGE_READWRITE* protection) and are commited (*MEM_COMMIT* state) using [VirtualQueryEx](https://learn.microsoft.com/es-es/windows/win32/api/memoryapi/nf-memoryapi-virtualqueryex) and [NtReadVirtualMemory](http://undocumented.ntinternals.net/index.html?page=UserMode%2FUndocumented%20Functions%2FMemory%20Management%2FVirtual%20Memory%2FNtReadVirtualMemory.html).
 
 It generates one file per memory region and one file containing all the memory chunks.
 
