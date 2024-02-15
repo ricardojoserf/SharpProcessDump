@@ -8,7 +8,7 @@ It generates one file per memory region and one file containing all the memory c
 SharpProcessDump.exe [PROCESS] [FILE]
 ```
 
-The default value for the process is "lsass" and for the file containing all memory chunks it is "dump.dmp".
+The default value for the process is "lsass" and for the file containing all memory chunks it is *"Process_PID_allinone.dmp"*.
 
 
 --------------------------
