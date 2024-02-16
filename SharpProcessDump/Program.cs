@@ -100,7 +100,8 @@ namespace SharpProcessDump
                 ntstatus = NtQueryVirtualMemory(processHandle, (IntPtr)aux_address, MemoryBasicInformation, out mbi, 0x30, out _);
 
                 // If readable and commited --> Write memory region to a file
-                if (mbi.Protect == PAGE_READWRITE && mbi.State == MEM_COMMIT)
+                // if (mbi.Protect == PAGE_READWRITE && mbi.State == MEM_COMMIT)
+                if (mbi.Protect != PAGE_NOACCESS && mbi.State == MEM_COMMIT)
                 {
                     Console.WriteLine("[*] Dumping memory region 0x" + aux_address.ToString("X") + " (" + mbi.RegionSize + " bytes)");
                     byte[] buffer = new byte[(int)mbi.RegionSize];

@@ -9,6 +9,7 @@ namespace SharpProcessDump
         ///////////////// CONSTANTS /////////////////
         public const int MEM_COMMIT = 0x00001000;
         public const int PAGE_READWRITE = 0x04;
+        public const int PAGE_NOACCESS = 0x01;
         public const uint PROCESS_QUERY_INFORMATION = 0x0400;
         public const uint PROCESS_VM_READ = 0x0010;
         public const int MAXIMUM_ALLOWED = 0x02000000;
