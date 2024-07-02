@@ -27,4 +27,4 @@ It generates one file per memory region using the process name, PID and memory a
 
 ![img4](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/sharpprocessdump/Screenshot_4.png)
 
-As you can see in the image above, the size between the dump file created using Process Hacker and this tool have almost the same size.
+As you can see in the image above, the size of the dump file created using Process Hacker and the one generated with this tool is almost the same size. However the file is not a valid Minidump file, if you are interested in this check [NativeDump](https://github.com/ricardojoserf/NativeDump).
